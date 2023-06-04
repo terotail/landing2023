@@ -153,6 +153,11 @@ nav {
 #companies {
   padding: 0px 80px 80px 80px;
   background-color: #fff;
+
+  @media (max-width: 920px) {
+    padding: 40px;
+  }
+
   p {
     text-transform: uppercase;
     font-size: 14px;
@@ -183,7 +188,8 @@ nav {
       margin-top: 40px;
 
       img {
-        max-height: 32px;
+        max-height: 28px;
+        max-width: 150px;
       }
     }
   }
@@ -196,13 +202,17 @@ nav {
 
   .testimonials-row {
     display: flex;
-
     gap: 40px;
     justify-content: center;
-    flex-wrap: wrap;
+    @media (max-width: 920px) {
+      flex-direction: column;
+    }
+
     .testimonials-1 {
-      text-align: center;
-      max-width: 400px;
+      text-align: left;
+
+      padding: 0 40px;
+
       h4 {
         font-style: italic;
         font-weight: 300;
@@ -232,8 +242,11 @@ nav {
 // Get in touch
 
 #get-in-touch {
-  padding: 0px 80px 80px 80px;
+  padding: 80px 80px 80px 80px;
   background-color: #fff;
+  @media (max-width: 920px) {
+    padding: 0px;
+  }
 
   p {
     text-transform: uppercase;
@@ -257,6 +270,7 @@ nav {
       grid-template-rows: 1fr;
       grid-column-gap: 0px;
       grid-row-gap: 0px;
+      border-radius: 0px;
     }
 
     .get-in-touch-text {
