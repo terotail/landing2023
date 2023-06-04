@@ -248,6 +248,7 @@ nav #navbar {
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     border-radius: 0px;
+    padding: 40px;
   }
 }
 #get-in-touch #get-in-touch-content .get-in-touch-text {
