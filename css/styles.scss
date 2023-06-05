@@ -15,6 +15,9 @@ body {
     gap: 40px;
     margin: 80px;
     text-align: center;
+    p{
+      line-height: 28px;
+    }
 
     @media (max-width: 920px) {
       margin: 40px;
@@ -87,7 +90,7 @@ nav {
     color: #fff;
   }
   p {
-    margin: 0 20px;
+    margin: 0 20px 40px 20px;
   }
   height: 90vh;
 
@@ -186,10 +189,12 @@ nav {
       gap: 120px;
       justify-content: center;
       margin-top: 40px;
+      flex: 1;
+
 
       img {
         max-height: 28px;
-        max-width: 150px;
+        // max-width: 150px;
       }
     }
   }
@@ -202,15 +207,19 @@ nav {
 
   .testimonials-row {
     display: flex;
-    gap: 40px;
+    // gap: 40px;
+    flex: 1;
     justify-content: center;
     @media (max-width: 920px) {
       flex-direction: column;
+      gap: 40px;
+      margin-top: 80px;
     }
 
     .testimonials-1 {
       text-align: left;
       padding: 0 40px;
+      flex: 1;
 
       h4 {
         font-style: italic;

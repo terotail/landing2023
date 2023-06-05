@@ -14,6 +14,9 @@ body {
   margin: 80px;
   text-align: center;
 }
+.container .headline p {
+  line-height: 28px;
+}
 @media (max-width: 920px) {
   .container .headline {
     margin: 40px;
@@ -84,7 +87,7 @@ nav #navbar {
   color: #fff;
 }
 #hero p {
-  margin: 0 20px;
+  margin: 0 20px 40px 20px;
 }
 #hero #background-video {
   width: 100vw;
@@ -171,10 +174,10 @@ nav #navbar {
   gap: 120px;
   justify-content: center;
   margin-top: 40px;
+  flex: 1;
 }
 #companies #companies-content #logos img {
   max-height: 28px;
-  max-width: 150px;
 }
 
 .testimonials {
@@ -183,17 +186,20 @@ nav #navbar {
 }
 .testimonials .testimonials-row {
   display: flex;
-  gap: 40px;
+  flex: 1;
   justify-content: center;
 }
 @media (max-width: 920px) {
   .testimonials .testimonials-row {
     flex-direction: column;
+    gap: 40px;
+    margin-top: 80px;
   }
 }
 .testimonials .testimonials-row .testimonials-1 {
   text-align: left;
   padding: 0 40px;
+  flex: 1;
 }
 .testimonials .testimonials-row .testimonials-1 h4 {
   font-style: italic;
